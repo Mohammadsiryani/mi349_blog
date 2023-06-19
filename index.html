@@ -2,19 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=, minimum-scale=, user-scalable=yes">
+        content="width=device-width, initial-scale=1.0, maximum-scale=, minimum-scale=, user-scalable=yes" />
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Blog Web Page | Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <style>
+        .sticky-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        body {
+            padding: 10%;
+            /* Adjust the value based on your needs */
+        }
+
+        #about-section,
+        #skills-section {
+            margin-top: 10px;
+            /* Adjust the value based on your needs */
+        }
+
+        footer {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .side-column {
+            flex: 1;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .main-column {
+            flex: 2;
+            background-color: lightblue;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
-
-    <header>
+    <header class="sticky-nav">
         <div class="container container-nav">
             <div class="site-title">
                 <h1>BlogAwesome Blog Page</h1>
@@ -31,98 +83,80 @@
     </header>
 
     <div class="container container-flex">
-
         <div role="main">
             <!--first blog-->
             <article class="article-featured">
-                <h2 class="article-title"> The Essence of a Simple Life</h2>
-                <img src="Images/lifestyle.jpg" alt="greenery pic" class="article-image">
-                <p class="article-info">June 12, 2023 | Author : Mohammadsiryani </p>
+                <h2 class="article-title">The Essence of a Simple Life</h2>
+                <img src="Images/lifestyle.jpg" alt="greenery pic" class="article-image" />
+                <p class="article-info">June 12, 2023 | Author : Mohammadsiryani</p>
                 <p class="article-body">
-
-                    In a world overwhelmed by complexity and busyness, the true meaning of a simple life often eludes
-                    us. Yet, beneath
-                    societal expectations and material pursuits lies a profound truth waiting to be discovered.
-                    Simplicity is not merely a
-                    way of living; it is a state of mind, a conscious choice to strip away the unnecessary and embrace
-                    the beauty of
-                    minimalism.
-
-                    By letting go of excessive material possessions, we liberate ourselves from the burdens of
-                    consumerism and find freedom
-                    in the space created. Simplicity extends beyond physical decluttering; it encompasses thoughts and
-                    emotions. In
-                    detachment, we find clarity and peace, appreciating the present moment and accepting life's
-                    impermanence.
-
-                    Nature, with its inherent simplicity, offers invaluable wisdom. Harmonizing with its rhythms teaches
-                    us to live
-                    sustainably and reconnect with our roots. Simplicity allows us to cherish life's simple pleasures,
-                    finding solace in the
-                    sway of trees, the sound of rain, and vibrant sunsets.
-
-                    Cultivating inner stillness becomes a transformative journey. Mindfulness and meditation quiet the
-                    mind, enabling us to
-                    be fully present in each breath. In silence, we unlock introspection and self-discovery.
-
-                    Relationships rooted in simplicity weave the fabric of our lives. Stripping away superficiality
-                    nurtures authentic
-                    connections. Communication fosters deep understanding, and acts of kindness create ripples of
-                    compassion.
-
-                    A simple life challenges conventional notions of success, shifting the focus to inner fulfillment.
-                    Gratitude for
-                    abundance and the pursuit of passions bring true wealth, transcending material possessions.
-
-                    As mindful consumers, we reject excess and embrace thrift and sustainability. Treading lightly on
-                    the Earth honors
-                    interconnectedness and ensures a harmonious future.
-
-                    Simplicity is a path of personal growth, liberating time and energy for self-care and
-                    transformation. It embraces
-                    change, adaptation, and the beauty of imperfection.
-
-                    In life's ordinary moments, we discover extraordinary joy. Gratitude cultivates contentment, mindful
-                    eating celebrates
-                    nourishment, and everyday rituals ground us in the present.
-
-                    Simple living becomes a spiritual journey, reconnecting us with our essence. Embracing simplicity,
-                    we find serenity and
-                    the profound meaning of a life well-lived.</p>
+                    In a world overwhelmed by complexity and busyness, the true meaning
+                    of a simple life often eludes us. Yet, beneath societal expectations
+                    and material pursuits lies a profound truth waiting to be
+                    discovered. Simplicity is not merely a way of living; it is a state
+                    of mind, a conscious choice to strip away the unnecessary and
+                    embrace the beauty of minimalism. By letting go of excessive
+                    material possessions, we liberate ourselves from the burdens of
+                    consumerism and find freedom in the space created. Simplicity
+                    extends beyond physical decluttering; it encompasses thoughts and
+                    emotions. In detachment, we find clarity and peace, appreciating the
+                    present moment and accepting life's impermanence. Nature, with its
+                    inherent simplicity, offers invaluable wisdom. Harmonizing with its
+                    rhythms teaches us to live sustainably and reconnect with our roots.
+                    Simplicity allows us to cherish life's simple pleasures, finding
+                    solace in the sway of trees, the sound of rain, and vibrant sunsets.
+                    Cultivating inner stillness becomes a transformative journey.
+                    Mindfulness and meditation quiet the mind, enabling us to be fully
+                    present in each breath. In silence, we unlock introspection and
+                    self-discovery. Relationships rooted in simplicity weave the fabric
+                    of our lives. Stripping away superficiality nurtures authentic
+                    connections. Communication fosters deep understanding, and acts of
+                    kindness create ripples of compassion. A simple life challenges
+                    conventional notions of success, shifting the focus to inner
+                    fulfillment. Gratitude for abundance and the pursuit of passions
+                    bring true wealth, transcending material possessions. As mindful
+                    consumers, we reject excess and embrace thrift and sustainability.
+                    Treading lightly on the Earth honors interconnectedness and ensures
+                    a harmonious future. Simplicity is a path of personal growth,
+                    liberating time and energy for self-care and transformation. It
+                    embraces change, adaptation, and the beauty of imperfection. In
+                    life's ordinary moments, we discover extraordinary joy. Gratitude
+                    cultivates contentment, mindful eating celebrates nourishment, and
+                    everyday rituals ground us in the present. Simple living becomes a
+                    spiritual journey, reconnecting us with our essence. Embracing
+                    simplicity, we find serenity and the profound meaning of a life
+                    well-lived.
+                </p>
                 <a href="#" class="article-read-more">CONTINUE READING</a>
             </article>
 
             <!--second blog-->
             <article class="article-featured">
                 <h2 class="article-title">Pros and cons of AI</h2>
-                <img src="Images/AI.jpg" alt="greenery pic" class="article-image">
+                <img src="Images/AI.jpg" alt="greenery pic" class="article-image" />
                 <p class="article-info">June 8, 2023 | Author: Mohammadsiryani</p>
-                <p class="article-body">Artificial Intelligence (AI) has revolutionized various aspects of our lives,
-                    but it's essential to understand its pros
-                    and cons. On the positive side, AI enhances efficiency, automates tasks, and improves productivity.
-                    It brings
-                    advancements in healthcare, aids diagnosis, and personalizes education. AI accelerates scientific
-                    research, offering
-                    insights for global challenges, and improves workplace safety in hazardous environments.
-
-                    However, concerns exist. Ethical implications arise as AI systems become more autonomous, requiring
-                    transparency and
-                    accountability. Data privacy and security become critical, raising the risk of breaches and
-                    unauthorized access. Job
-                    displacement and the need for reskilling emerge as AI replaces repetitive tasks. Human interaction
-                    and social dynamics
-                    may suffer with increased AI prevalence.
-
-                    In conclusion, AI brings significant benefits, but ethical considerations and data security must be
-                    addressed. Job
-                    displacement and human interaction challenges need careful attention. By embracing responsible
-                    development and
-                    human-centered design, we can maximize AI's positive impact while mitigating its potential
-                    drawbacks. Navigating the
-                    realm of AI requires a balanced and mindful approach..
+                <p class="article-body">
+                    Artificial Intelligence (AI) has revolutionized various aspects of
+                    our lives, but it's essential to understand its pros and cons. On
+                    the positive side, AI enhances efficiency, automates tasks, and
+                    improves productivity. It brings advancements in healthcare, aids
+                    diagnosis, and personalizes education. AI accelerates scientific
+                    research, offering insights for global challenges, and improves
+                    workplace safety in hazardous environments. However, concerns exist.
+                    Ethical implications arise as AI systems become more autonomous,
+                    requiring transparency and accountability. Data privacy and security
+                    become critical, raising the risk of breaches and unauthorized
+                    access. Job displacement and the need for reskilling emerge as AI
+                    replaces repetitive tasks. Human interaction and social dynamics may
+                    suffer with increased AI prevalence. In conclusion, AI brings
+                    significant benefits, but ethical considerations and data security
+                    must be addressed. Job displacement and human interaction challenges
+                    need careful attention. By embracing responsible development and
+                    human-centered design, we can maximize AI's positive impact while
+                    mitigating its potential drawbacks. Navigating the realm of AI
+                    requires a balanced and mindful approach..
                     <a href="#" class="article-read-more">CONTINUE READING</a>
-                </p><br>
-
+                </p>
 
                 <div class="ai-table">
                     <table>
@@ -148,46 +182,52 @@
                         </tr>
                     </table>
                 </div>
-
-
             </article>
+            <div class="container">
+                <div class="side-column">
+                    <h2>Latest News</h2>
+                    <p>Check out our latest blog post about the importance of staying hydrated during summer.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="main-column">
+                    <h2>Featured Article</h2>
+                    <p>Discover the top 10 hiking trails around the world that every adventurer should explore.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="side-column">
+                    <h2>Tips & Tricks</h2>
+                    <p>Learn how to capture stunning photographs with your smartphone in our latest photography blog post.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
 
             <section id="newsletter-section">
                 <h2>Subscribe to our Newsletter</h2>
                 <form id="newsletter-form" action="newsletter_signup.php" method="post">
-                    <input class="newsletter-input" type="email" name="email" placeholder="Enter your email" required>
+                    <input class="newsletter-input" type="email" name="email" placeholder="Enter your email" required />
                     <button class="newsletter-submit" type="submit">Subscribe</button>
                 </form>
             </section>
-
-
-
         </div>
 
         <aside class="sidebar">
-
-
-
             <div class="sidebar-widget">
-                <h2 class="widget-title">UPCOMING BLOG POSTS</h2>
-
                 <div class="widget-recent-post">
                     <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
-                    <img src="img/food.jpg" alt="" class="widget-image">
+                    <img src="img/food.jpg" alt="" class="widget-image" />
                 </div>
 
                 <div class="widget-recent-post">
                     <h3 class="widget-recent-post-title">Simplicity and work</h3>
-                    <img src="img/work.jpg" alt="" class="widget-image">
+                    <img src="img/work.jpg" alt="" class="widget-image" />
                 </div>
 
                 <div class="widget-recent-post">
                     <h3 class="widget-recent-post-title">Simple decoration</h3>
-                    <img src="img/deco.jpg" alt="" class="widget-image">
+                    <img src="img/deco.jpg" alt="" class="widget-image" />
                 </div>
-
             </div>
-
         </aside>
     </div>
 
